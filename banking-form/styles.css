@@ -1,0 +1,13 @@
+body {
+  background-color: skyblue;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+}
+
+label {
+  padding: 0 3px 10px 2px;
+}
