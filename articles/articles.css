@@ -1,0 +1,64 @@
+.articleOne {
+  background-color: blue;
+  border: 3px groove #DF0101;
+  border-radius: 10px;
+  font-family: 'Play', sans-serif;
+  color: #F2F2F2;
+  line-height: 1.25m;
+  padding: 22px;
+  margin: 10px 0;
+}
+
+.articleTwo {
+  background-color: black;
+  border: 8px solid #FFFF00;
+  border-radius: 2px;
+  font-family: 'Nothing You Could Do', cursive;
+  color: #B40404;
+  line-height: 65%;
+  padding: 0;
+
+}
+
+.articleTwo p, h3 {
+  margin: 0;
+}
+
+
+
+.articleThree {
+  background-color: #F5A9F2;
+  border: 3px dotted #01A9DB;
+  border-radius: 80px;
+  font-family: 'Great Vibes', cursive;
+  color: #FE2EC8;
+  line-height: 1.5em;
+  padding: 50px;
+  margin: 10px 0;
+}
+
+.articleFour {
+  background-color: #AEB404;
+  border: 1px dashed #FF8000;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  color: #2A0A0A;
+  line-height: 2em;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.articleFive {
+  background-color: #BDBDBD;
+  border: 3px solid #0B2F3A;
+  border-radius: 0;
+  font-family: 'Bangers', cursive;
+  color: #0B2F3A;
+  line-height: 2.5em;
+  padding: 22px;
+  margin: 10px 0;
+}
+
+.articleFive h3 {
+  font-size: 2em;
+}
