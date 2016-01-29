@@ -1,0 +1,53 @@
+header {
+  border: 1px solid orange;
+  height: 35px;
+}
+
+.header > li{
+  list-style: none;
+  padding: 0 15px;
+  float: right;
+  margin-bottom: 10px;
+}
+
+.red {
+  color: red;
+}
+
+.red ~ h4 {
+  background-color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.blue ~ h4 {
+  background-color: blue;
+}
+
+.grandparent > h4 {
+  border: 1px solid purple;
+  border-radius: 5px;
+}
+
+input {
+  line-height: 25px;
+}
+
+.disabled {
+  color: grey;
+}
+
+a .disabled{
+  color: purple;
+}
+
+.promo {
+  font-weight: 700;
+  color: gold;
+}
+
+.active {
+  color: yellow;
+}
