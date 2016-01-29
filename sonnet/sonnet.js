@@ -10,5 +10,5 @@ console.log(firstNewSonnet);
 document.getElementById("sonnet").innerHTML = firstNewSonnet;
 
 var secondNewSonnet = firstNewSonnet.replace(/\bthe\b/g, "a large");
-console.log(secondNewSonnet);
+document.getElementById("sonnet").innerHTML = secondNewSonnet;
 
