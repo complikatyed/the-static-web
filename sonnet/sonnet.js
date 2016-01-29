@@ -8,3 +8,7 @@ console.log("Total characters in the sonnet:", text.length);
 var firstNewSonnet = text.replace("winter", "yuletide");
 console.log(firstNewSonnet);
 document.getElementById("sonnet").innerHTML = firstNewSonnet;
+
+var secondNewSonnet = firstNewSonnet.replace(/\bthe\b/g, "a large");
+console.log(secondNewSonnet);
+
