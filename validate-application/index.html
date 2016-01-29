@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Banking Form</title>
+  <link rel="stylesheet" type="css/text" href="validation.css">
+</head>
+<body>
+  <form method="GET">
+  <fieldset>
+    <legend>Applicant</legend>
+    <label for="first-name">First Name</label><input type="text" name="first-name" size="20">
+    <label for="middle-initial">Middle Initial</label><input type="text" name="middle-initial" size="1">
+    <label for="last-name">Last Name</label><input type="text" name="last-name" size="20">
+  </fieldset>
+  <fieldset>
+    <legend>Applicant Contact Information</legend>
+    <label for="applicant-street">Street</label><input type="text" name="applicant-street"size="55">
+    <label for="applicant-apt">Apartment</label><input type="text" name="applicant-apt" size="9"><br>
+    <label for="applicant-city">City</label><input type="text" name="applicant-city" size="48">
+    <label for="applicant-state">State</label><input type="text" name="applicant-state" size="2">
+    <label for="zip">Zip code</label><input type="text" name="zip" size="10"><br>
+    <label for="email">Email</label><input type="email" name="email" placeholder="myemail@wherever.com" size="47">
+    <label for="applicant-phone">Phone</label><input type="tel" name="applicant-phone" placeholder="800-555-1212"><br>
+    <label for="linkedIn">LinkedIn URL</label><input type="url" name="linkedIn" placeholder="https://www.linkedin.com/yourname" size="69">
+  </fieldset>
+  <fieldset>
+    <legend>Employment Information</legend>
+    <label for="occupation">Occupation</label><input type="text" name="occupation" size="30">
+    <label for="employer">Employer</label><input type="text" name="employer" size="30"><br>
+    <label for="employer-street">Employer Street</label><input type="text" name="employer-street" size="50">
+    <label for="employer-suite">Suite</label><input type="text" name="employer-suite" size="9"><br>
+    <label for="employer-city">City</label><input type="text" name="employer-city" size="48">
+    <label for="employer-state">State</label><input type="text" name="employer-state" size="2">
+    <label for="employer-zip">Zip code</label><input type="text" name="employer-zip" size="10">
+  </fieldset>
+  <fieldset>
+    <legend>Loan Information</legend>
+    <label for="loan-type">Type of Loan</label><select name="loan-type">
+      <option value="commercial">Commercial</option>
+      <option value="real-estate">Real Estate</option>
+      <option value="personal">Personal</option>
+      <option value="mortgage">Mortgage</option>
+    </select>
+    <label for="loan-amount" class="loan-amount">Loan Amount Sought</label><input type="text" name="loan-amount"><br>
+    <label for="loan-length">Duration of Loan:</label>
+     <input type="radio" name="loan-length" value="5">5 years
+     <input type="radio" name="loan-length" value="15">15 years
+     <input type="radio" name="loan-length" value="30">30 years
+     <br>
+    <label for="specials" class="fancy">Special Conditions:</label><br>
+    <input type="checkbox" name="specials" value="downpayment" class="specials">I have a down payment.<br>
+    <input type="checkbox" name="specials" value="out-of-state" class="specials">I'm an out-of-state resident.<br>
+    <input type="checkbox" name="specials" value="married" class="specials">I'm married.<br>
+    <input type="checkbox" name="specials" value="co-sign" class="specials">I have a co-signer.<br>
+  </fieldset>
+  <fieldset>
+    <legend>Additional comments</legend>
+    <textarea rows="10" cols="75"></textarea>
+  </fieldset>
+  </form>
+</body>
+</html>

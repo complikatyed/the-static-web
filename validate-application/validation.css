@@ -1,0 +1,42 @@
+form {
+  max-width: 710px;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
+}
+
+
+label {
+  padding: 0 3px;
+/*  border: 1px solid purple;*/
+}
+
+.specials {
+  margin-left: 25px;
+  margin-right: 5px;
+}
+
+.loan-amount {
+  margin-left: 25px;
+}
+
+input[type=radio] {
+  margin: 10px 5px 10px 3px;
+}
+
+input {
+  margin: 0;
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+input[type=email]:invalid,
+input[type=url  ]:invalid {
+  border: 1px solid red;
+  background-color: #F5A9A9;
+}
+
+input[type=email]:valid,
+input[type=url  ]:valid {
+  border: 1px solid green;
+  background-color: #CEF6CE;
+}
