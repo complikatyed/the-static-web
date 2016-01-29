@@ -1,15 +1,22 @@
+body {
+  background-color: #80FF00;
+}
 .nav > li {
   list-style: none;
   padding-right: 10px;
   float: left;
 }
 
-
 a {
   text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 a:hover {
-  color: orange;
-  background-color: skyblue;
+  color: #0B2F3A;
+}
+
+li a:hover {
+  background-color: #3ADF00;
+  padding: 0 5px;
 }
