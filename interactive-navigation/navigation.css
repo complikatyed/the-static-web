@@ -1,0 +1,14 @@
+.nav > li {
+  list-style: none;
+  padding-right: 10px;
+  float: left;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
