@@ -29,7 +29,6 @@ for (var loopTracker = 0; loopTracker < loopCount; loopTracker += 1) {
   currentVeggie += "<p>" + vegetables[loopTracker] + "</p>";
 
   document.getElementById("vegetables").innerHTML = currentVeggie;
- 
-  //currentVeggie = vegetables[loopTracker].innerHTML;
+
 
 }
