@@ -50,6 +50,7 @@ console.log("The lowest score:", min);
 
 // What is the highest grade?
 
-
+var max = Math.max(...scores);
+console.log("The highest score:", max);
 
 
