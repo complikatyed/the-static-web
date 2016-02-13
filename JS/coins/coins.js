@@ -10,41 +10,51 @@
 
 */
 
-// function coinCounter () {
-//   // Initialize a JavaScript object to hold the coins
-//   var coinPurse = {};
+function coinCounter (amount) {
+  // Initialize a JavaScript object to hold the coins
+  var coinPurse = {};
 
-//   coinPurse.quarters = 0;
+  coinPurse.quarters = 0;
+  coinPurse.dimes = 0;
+  coinPurse.nickels = 0;
+  coinPurse.pennies = 0;
 
-//   return coinPurse;
-// }
-
-// var coins = coinCounter()
-// console.log();
-
-var amount = 2.74;
-var quarters = 0;
-var dimes = 0;
-var nickels = 0;
-var pennies = 0;
-
-
-amount *= 100;
+  amount *= 100;
 while (amount >= 25) {
-  quarters += 1;
+  coinPurse.quarters += 1;
   amount -= 25;
 } while (amount >= 10) {
-  dimes += 1;
+  coinPurse.dimes += 1;
   amount -= 10;
 } while (amount >= 5) {
-  nickels += 1;
+  coinPurse.nickels += 1;
   amount -= 5;
 } while (amount >= 1) {
-  pennies += 1;
+  coinPurse.pennies += 1;
   amount -= 1;
 }
 
-console.log("quarters:", quarters);
-console.log("dimes:", dimes);
-console.log("nickels:", nickels);
-console.log("pennies:", pennies);
+  return coinPurse;
+}
+
+var coins = coinCounter(.18); // coins will equal the object created by coinCounter
+
+
+var listThings = function(amount) {
+  var coins = coinCounter(amount);
+  for (var i = 0; i < Object.keys(coins).length; i++) {  // Using the length of the object
+    var list = "<p>You may have these coins:</p>";
+    list += "<p>Quarters: " + coins.quarters + "</p>";
+    list += "<p>Dimes: " + coins.dimes + "</p>";
+    list += "<p>Nickels: " + coins.nickels + "</p>";
+    list += "<p>Pennies: " + coins.pennies + "</p>";
+  };
+
+  document.getElementById('coinDisplay').innerHTML = list;
+  console.log(list);
+}
+
+listThings(1.48);
+
+
+
