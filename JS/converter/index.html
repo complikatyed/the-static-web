@@ -3,15 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <label for="temp">Please enter a temperature:</label><input type="text"><br>
-  Show the temperature in
-  <label for="convert_to">Farenheit</label><input type="radio" name="convert_to"value="farenheit">
-  <label for="convert_to">Celsius</label><input type="radio" name="convert_to"value="celsius"><br>
-  <button class="convert">Convert Now</button>
-  <button>Clear</button>
-  <div id="converted_temp" class="new_temp"></div>
+  <form name="TempConv">
+    Please enter a temperature:<input type="text" id="temp" name="temp"><br>
+
+    Convert the temp
+    <input type="radio" name="convert_to" id="Celsius" value="Celsius">from F to C
+    <input type="radio" name="convert_to" id="Fahrenheit" value="Fahrenheit">from C to F<br>
+    <button id="convert" type="">Convert Now</button>
+    <button id="clear" type=''>Clear</button><br>
+
+    <div id="convertedTemp" class="newTemp"></div>
+  </form>
+
   <script type="text/javascript" src="converter.js"></script>
 </body>
 </html>
