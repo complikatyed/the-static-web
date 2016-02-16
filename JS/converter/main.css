@@ -1,0 +1,28 @@
+body {
+  background-color: skyblue;
+}
+
+.newTemp,
+.hot,
+.cold,
+.temperate {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid black;
+  margin-top: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+.hot {
+  color: red;
+}
+
+.cold {
+  color: blue;
+}
+
+.temperate {
+  color: green;
+}
+
